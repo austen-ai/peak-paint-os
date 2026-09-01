@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<script src="./support.local.js"></script>
+<script src="./support.js"></script>
 </head>
 <body>
 <x-dc>
@@ -41,7 +41,7 @@ a:hover{color:#0b6259}
     <div style="font:700 12px/1.1 Poppins;letter-spacing:0.06em;color:#16A394;margin-bottom:78px">PEAK PAINTING &amp; DECORATING</div>
     <div style="font:600 10px/1 Barlow;letter-spacing:0.24em;color:#8C9599;margin-bottom:14px">COMMERCIAL PROPOSAL</div>
     <div style="font:700 52px/1.02 Poppins;margin-bottom:18px">Peak Paint OS.<br>Ways to buy it.</div>
-    <p style="font:400 14px/1.6 Barlow;color:#B9C0C3;max-width:4.6in;margin:0">Four ways to take this on — outright or staged, with the running costs carried by us or by you. Same system either way.</p>
+    <p style="font:400 14px/1.6 Barlow;color:#B9C0C3;max-width:4.6in;margin:0">Three ways to take this on — buy it outright, build it in stages, or trial it first. Same system in all three.</p>
   </div>
   <div>
     <div style="font:600 9px/1 Barlow;letter-spacing:0.22em;color:#16A394;margin-bottom:9px">PREPARED FOR DANNY WILLIAMS</div>
@@ -56,175 +56,207 @@ a:hover{color:#0b6259}
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:16px">
     <div>
       <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">BUILT AND WORKING</div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1">HQ desktop &#8212; dashboard, quotes, tendering, projects, schedule</span></div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1">Rates library with access and condition loadings</span></div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1">Health &amp; Safety &#8212; SWMS, hazards, incidents, toolbox</span></div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1">Invoicing &#8212; progress claims off % complete and variations</span></div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1">Timesheets &#8212; overtime, vehicle km, cost vs charge-out</span></div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1">Reports &amp; KPIs, all derived &#8212; nothing keyed twice</span></div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1">Field app &#8212; clock on, progress, photos, variations, materials</span></div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1">Indirect hours &#8212; travel, training, yard, weather, other</span></div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1">Three access levels with PIN sign-in</span></div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1">Shared cloud database &#8212; office and crew see the same data</span></div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1">Two written guides, desktop and phone</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1;min-width:0">HQ desktop &#8212; dashboard, quotes, tendering, projects, schedule</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1;min-width:0">Rates library with access and condition loadings</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1;min-width:0">Health &amp; Safety &#8212; SWMS, hazards, incidents, toolbox</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1;min-width:0">Invoicing &#8212; progress claims off % complete and variations</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1;min-width:0">Timesheets &#8212; overtime, vehicle km, cost vs charge-out</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1;min-width:0">Reports &amp; KPIs, all derived &#8212; nothing keyed twice</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1;min-width:0">Field app &#8212; clock on, progress, photos, variations, materials</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1;min-width:0">Indirect hours &#8212; travel, training, yard, weather, other</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1;min-width:0">Two office logins Three access levels with PIN sign-in#8212; Management and Crew Three access levels with PIN sign-in#8212; plus the field app</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1;min-width:0">Shared cloud database &#8212; office and crew see the same data</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1;min-width:0">Two written guides, desktop and phone</span></div>
     </div>
     <div>
       <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">NOT IN THIS SCOPE</div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#7C8689"><span style="color:#C2673F;font-weight:700">&#215;</span><span style="flex:1">Xero or MYOB sync &#8212; CSV export only (see options)</span></div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#7C8689"><span style="color:#C2673F;font-weight:700">&#215;</span><span style="flex:1">Individual named logins with passwords and audit trail</span></div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#7C8689"><span style="color:#C2673F;font-weight:700">&#215;</span><span style="flex:1">Database-level permission hardening</span></div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#7C8689"><span style="color:#C2673F;font-weight:700">&#215;</span><span style="flex:1">Full offline working where there is no coverage</span></div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#7C8689"><span style="color:#C2673F;font-weight:700">&#215;</span><span style="flex:1">Apps in the Apple or Google stores</span></div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#7C8689"><span style="color:#C2673F;font-weight:700">&#215;</span><span style="flex:1">Data migration from any existing system</span></div>
-      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#7C8689"><span style="color:#C2673F;font-weight:700">&#215;</span><span style="flex:1">Training beyond a handover session</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#7C8689"><span style="color:#C2673F;font-weight:700">&#215;</span><span style="flex:1;min-width:0">Xero or MYOB sync &#8212; CSV export only (see options)</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#7C8689"><span style="color:#C2673F;font-weight:700">&#215;</span><span style="flex:1;min-width:0">Individual named logins with passwords and audit trail</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#7C8689"><span style="color:#C2673F;font-weight:700">&#215;</span><span style="flex:1;min-width:0">Database-level permission hardening</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#7C8689"><span style="color:#C2673F;font-weight:700">&#215;</span><span style="flex:1;min-width:0">Full offline working where there is no coverage</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#7C8689"><span style="color:#C2673F;font-weight:700">&#215;</span><span style="flex:1;min-width:0">Apps in the Apple or Google stores</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#7C8689"><span style="color:#C2673F;font-weight:700">&#215;</span><span style="flex:1;min-width:0">Data migration from any existing system</span></div>
+      <div style="display:flex;gap:8px;padding:5px 0;font:400 11.8px/1.45 Barlow;color:#7C8689"><span style="color:#C2673F;font-weight:700">&#215;</span><span style="flex:1;min-width:0">Training beyond a handover session</span></div>
       <div style="height:10px"></div>
       <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">HOW IT RUNS</div>
       <p style="font:400 11.8px/1.5 Barlow;color:#33393B;margin:0">Opens in any browser on any device. Nothing to install. The crew add it to their home screen and it behaves like an app.</p>
     </div>
   </div>
-  <div style="border-left:3px solid #16A394;padding:11px 15px;background:#F4F7F7;break-inside:avoid"><p style="font:400 12.6px/1.55 Barlow;color:#33393B;margin:0"><strong>Worth being straight about:</strong> this is a working system built for Peak, not off-the-shelf software with a support desk behind it. That is why the trial comes first and why the staged options exist.</p></div>
+  <div style="border-left:3px solid #16A394;padding:11px 15px;background:#F4F7F7;break-inside:avoid"><p style="font:400 12.6px/1.55 Barlow;color:#33393B;margin:0"><strong>Worth being straight about:</strong> this is a working system built for Peak, not off-the-shelf software with a support desk behind it. That is why the trial exists, and why you can stage it rather than commit the lot up front.</p></div>
 </section>
+
 
 <section data-screen-label="Options" style="break-after:page">
-  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:9px"><span style="font:700 10px/1.3 Poppins;letter-spacing:0.16em;color:#16A394;white-space:nowrap">THE FOUR OPTIONS</span><span style="font:500 9px/1.3 Barlow;letter-spacing:0.3em;color:#16A394;white-space:nowrap">C O M M E R C I A L</span></div><div style="height:1px;background:#101617;margin-bottom:16px"></div>
-  <h2 style="font:700 32px/1.05 Poppins;margin:0 0 8px;color:#101617">Outright or staged. Server in or out.</h2>
-  <p style="font:400 13.4px/1.6 Barlow;color:#4A5153;max-width:5.6in;margin:0 0 18px">Two decisions, four combinations. The system is identical in all of them &#8212; only the payment shape and who pays the monthly running cost change.</p>
-  <div style="border:1px solid #DDE1E2;margin-bottom:18px;break-inside:avoid">
-    <div style="display:grid;grid-template-columns:0.7fr 1.5fr 1.2fr 1.1fr;background:#101617;color:#F4F6F6;font:600 9px/1 Barlow;letter-spacing:0.14em;padding:9px 12px"><span></span><span>PAYMENT SHAPE</span><span>SERVER COST</span><span>SUITS YOU IF</span></div>
-    <div style="display:grid;grid-template-columns:0.7fr 1.5fr 1.2fr 1.1fr;padding:10px 12px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font:700 13px/1 Poppins;color:#16A394">A</strong><span>One payment, up front</span><span>Included, 12 months</span><span>You want it done and off your desk</span></div>
-    <div style="display:grid;grid-template-columns:0.7fr 1.5fr 1.2fr 1.1fr;padding:10px 12px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font:700 13px/1 Poppins;color:#16A394">B</strong><span>One payment, up front</span><span>Yours from day one</span><span>You would rather own the accounts</span></div>
-    <div style="display:grid;grid-template-columns:0.7fr 1.5fr 1.2fr 1.1fr;padding:10px 12px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font:700 13px/1 Poppins;color:#16A394">C</strong><span>Deposit, then stages</span><span>Included through build + 12 months</span><span>You want to pay as it proves itself</span></div>
-    <div style="display:grid;grid-template-columns:0.7fr 1.5fr 1.2fr 1.1fr;padding:10px 12px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font:700 13px/1 Poppins;color:#16A394">D</strong><span>Deposit, then stages</span><span>Yours from day one</span><span>Lowest amount to get started</span></div>
-  </div>
-  <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">WHAT IS THE SAME IN ALL FOUR</div>
-  <p style="font:400 12.2px/1.55 Barlow;color:#33393B;margin:0 0 16px">The full system as listed on the previous page, both guides, a handover session, and the trial period with your feedback built back in. Ownership of the system and its data is yours on final payment in every option.</p>
-  <div style="border-left:3px solid #16A394;padding:11px 15px;background:#F4F7F7;break-inside:avoid"><p style="font:400 12.6px/1.55 Barlow;color:#33393B;margin:0"><strong>Simplest read:</strong> A and B are the same product paid once. C and D spread it across stages so you only keep paying while it keeps proving itself.</p></div>
-</section>
-
-<section data-screen-label="Outright" style="break-after:page">
-  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:9px"><span style="font:700 10px/1.3 Poppins;letter-spacing:0.16em;color:#16A394;white-space:nowrap">OPTIONS A &amp; B &#183; OUTRIGHT</span><span style="font:500 9px/1.3 Barlow;letter-spacing:0.3em;color:#16A394;white-space:nowrap">C O M M E R C I A L</span></div><div style="height:1px;background:#101617;margin-bottom:16px"></div>
-  <h2 style="font:700 32px/1.05 Poppins;margin:0 0 8px;color:#101617">Buy it once.</h2>
-  <p style="font:400 13.4px/1.6 Barlow;color:#4A5153;max-width:5.6in;margin:0 0 18px">One payment, the whole system, yours. The only question is whether the monthly running cost sits with me for the first year or with you from the start.</p>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-bottom:18px">
-    <div style="border:1px solid #DDE1E2;padding:14px 15px;break-inside:avoid">
-      <div style="display:flex;align-items:baseline;gap:9px;margin-bottom:3px"><span style="font:700 15px/1 Poppins;color:#16A394">A</span><span style="font:700 15px/1.2 Poppins;color:#101617">Server included</span></div>
-      <div style="font:400 11.4px/1.45 Barlow;color:#7C8689;margin-bottom:9px">Twelve months of hosting and database on my account, then it transfers to you.</div>
-      <div style="display:flex;gap:8px;padding:5px 0;border-top:1px solid #E9ECEC;font:400 11.5px/1.45 Barlow;color:#33393B"><span style="flex:0 0 14px;color:#16A394;font-weight:700">&#183;</span><span style="flex:1">Full system, both guides, handover session</span></div><div style="display:flex;gap:8px;padding:5px 0;border-top:1px solid #E9ECEC;font:400 11.5px/1.45 Barlow;color:#33393B"><span style="flex:0 0 14px;color:#16A394;font-weight:700">&#183;</span><span style="flex:1">Hosting and database paid by me for 12 months</span></div><div style="display:flex;gap:8px;padding:5px 0;border-top:1px solid #E9ECEC;font:400 11.5px/1.45 Barlow;color:#33393B"><span style="flex:0 0 14px;color:#16A394;font-weight:700">&#183;</span><span style="flex:1">Trial feedback changes included for 60 days</span></div><div style="display:flex;gap:8px;padding:5px 0;border-top:1px solid #E9ECEC;font:400 11.5px/1.45 Barlow;color:#33393B"><span style="flex:0 0 14px;color:#16A394;font-weight:700">&#183;</span><span style="flex:1">Accounts transferred to you at 12 months</span></div><div style="display:flex;gap:8px;padding:5px 0;border-top:1px solid #E9ECEC;font:400 11.5px/1.45 Barlow;color:#33393B"><span style="flex:0 0 14px;color:#16A394;font-weight:700">&#183;</span><span style="flex:1">Higher single figure, nothing else to arrange</span></div>
-      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:11px;padding-top:9px;border-top:1.5px solid #101617">
-        <span style="font:600 9.5px/1 Poppins;letter-spacing:0.14em;color:#101617">ONE PAYMENT</span><span style="display:inline-block;min-width:78px;border-bottom:1.5px solid #16A394;color:#7C8689;font:400 12px/1.4 Barlow">&nbsp;</span></div>
-    </div>
-    <div style="border:1px solid #DDE1E2;padding:14px 15px;break-inside:avoid">
-      <div style="display:flex;align-items:baseline;gap:9px;margin-bottom:3px"><span style="font:700 15px/1 Poppins;color:#16A394">B</span><span style="font:700 15px/1.2 Poppins;color:#101617">Server excluded</span></div>
-      <div style="font:400 11.4px/1.45 Barlow;color:#7C8689;margin-bottom:9px">You open the accounts on day one. I set them up and hand you the keys.</div>
-      <div style="display:flex;gap:8px;padding:5px 0;border-top:1px solid #E9ECEC;font:400 11.5px/1.45 Barlow;color:#33393B"><span style="flex:0 0 14px;color:#16A394;font-weight:700">&#183;</span><span style="flex:1">Full system, both guides, handover session</span></div><div style="display:flex;gap:8px;padding:5px 0;border-top:1px solid #E9ECEC;font:400 11.5px/1.45 Barlow;color:#33393B"><span style="flex:0 0 14px;color:#16A394;font-weight:700">&#183;</span><span style="flex:1">You open and pay for hosting and database</span></div><div style="display:flex;gap:8px;padding:5px 0;border-top:1px solid #E9ECEC;font:400 11.5px/1.45 Barlow;color:#33393B"><span style="flex:0 0 14px;color:#16A394;font-weight:700">&#183;</span><span style="flex:1">I configure both accounts as part of handover</span></div><div style="display:flex;gap:8px;padding:5px 0;border-top:1px solid #E9ECEC;font:400 11.5px/1.45 Barlow;color:#33393B"><span style="flex:0 0 14px;color:#16A394;font-weight:700">&#183;</span><span style="flex:1">Trial feedback changes included for 60 days</span></div><div style="display:flex;gap:8px;padding:5px 0;border-top:1px solid #E9ECEC;font:400 11.5px/1.45 Barlow;color:#33393B"><span style="flex:0 0 14px;color:#16A394;font-weight:700">&#183;</span><span style="flex:1">Lower single figure, you carry the monthly</span></div>
-      <div style="display:flex;justify-content:space-between;align-items:baseline;margin-top:11px;padding-top:9px;border-top:1.5px solid #101617">
-        <span style="font:600 9.5px/1 Poppins;letter-spacing:0.14em;color:#101617">ONE PAYMENT</span><span style="display:inline-block;min-width:78px;border-bottom:1.5px solid #16A394;color:#7C8689;font:400 12px/1.4 Barlow">&nbsp;</span></div>
-    </div>
-  </div>
-  <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">THE DIFFERENCE BETWEEN THEM</div>
-  <p style="font:400 12.2px/1.55 Barlow;color:#33393B;margin:0 0 16px">Roughly twelve months of running cost &#8212; see the next page for the actual figures. Option A is the tidier of the two if you would rather not deal with two more subscriptions.</p>
-  <div style="border-left:3px solid #16A394;padding:11px 15px;background:#F4F7F7;break-inside:avoid"><p style="font:400 12.6px/1.55 Barlow;color:#33393B;margin:0"><strong>Either way:</strong> after the first year the running cost is yours. It is small, and it is the only ongoing cost this system has.</p></div>
-</section>
-
-<section data-screen-label="Staged" style="break-after:page">
-  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:9px"><span style="font:700 10px/1.3 Poppins;letter-spacing:0.16em;color:#16A394;white-space:nowrap">OPTIONS C &amp; D &#183; STAGED</span><span style="font:500 9px/1.3 Barlow;letter-spacing:0.3em;color:#16A394;white-space:nowrap">C O M M E R C I A L</span></div><div style="height:1px;background:#101617;margin-bottom:16px"></div>
-  <h2 style="font:700 32px/1.05 Poppins;margin:0 0 8px;color:#101617">Pay as it earns it.</h2>
-  <p style="font:400 13.4px/1.6 Barlow;color:#4A5153;max-width:5.6in;margin:0 0 18px">A deposit to start, then a payment at each stage once that stage is signed off. If it stops being worth it, you stop &#8212; and you keep everything paid for to that point.</p>
-  <div style="border:1px solid #DDE1E2;margin-bottom:16px">
-    <div style="display:grid;grid-template-columns:0.42fr 2fr 1.15fr 0.75fr;gap:12px;background:#101617;color:#F4F6F6;font:600 9px/1 Barlow;letter-spacing:0.14em;padding:9px 12px"><span></span><span>STAGE</span><span>PAID WHEN</span><span style="text-align:right">AMOUNT</span></div>
-    <div style="display:grid;grid-template-columns:0.42fr 2fr 1.15fr 0.75fr;gap:12px;padding:11px 12px;border-top:1px solid #E4E7E8;align-items:start">
-      <div><span style="display:inline-block;width:22px;height:22px;border:1.5px solid #16A394;color:#16A394;font:700 10px/20px Barlow;text-align:center">1</span></div>
-      <div><div style="font:600 12.4px/1.3 Poppins;color:#101617;margin-bottom:3px">Trial &#8212; live system</div><div style="font:400 11.2px/1.45 Barlow;color:#7C8689">The system as it stands, on your data, with both guides and a handover session. Your crew run real jobs through it.</div></div>
-      <div style="font:400 11.2px/1.45 Barlow;color:#33393B">On handover</div>
-      <div style="text-align:right"><span style="display:inline-block;min-width:70px;border-bottom:1.5px solid #16A394">&nbsp;</span></div>
-    </div>
-    <div style="display:grid;grid-template-columns:0.42fr 2fr 1.15fr 0.75fr;gap:12px;padding:11px 12px;border-top:1px solid #E4E7E8;align-items:start">
-      <div><span style="display:inline-block;width:22px;height:22px;border:1.5px solid #16A394;color:#16A394;font:700 10px/20px Barlow;text-align:center">2</span></div>
-      <div><div style="font:600 12.4px/1.3 Poppins;color:#101617;margin-bottom:3px">Trial feedback built in</div><div style="font:400 11.2px/1.45 Barlow;color:#7C8689">Everything you and the crew flag over the trial period, worked back into the system.</div></div>
-      <div style="font:400 11.2px/1.45 Barlow;color:#33393B">End of trial</div>
-      <div style="text-align:right"><span style="display:inline-block;min-width:70px;border-bottom:1.5px solid #16A394">&nbsp;</span></div>
-    </div>
-    <div style="display:grid;grid-template-columns:0.42fr 2fr 1.15fr 0.75fr;gap:12px;padding:11px 12px;border-top:1px solid #E4E7E8;align-items:start">
-      <div><span style="display:inline-block;width:22px;height:22px;border:1.5px solid #16A394;color:#16A394;font:700 10px/20px Barlow;text-align:center">3</span></div>
-      <div><div style="font:600 12.4px/1.3 Poppins;color:#101617;margin-bottom:3px">Hardening</div><div style="font:400 11.2px/1.45 Barlow;color:#7C8689">Named logins with passwords, permissions enforced at the database, proper audit of who changed what.</div></div>
-      <div style="font:400 11.2px/1.45 Barlow;color:#33393B">On sign-off</div>
-      <div style="text-align:right"><span style="display:inline-block;min-width:70px;border-bottom:1.5px solid #16A394">&nbsp;</span></div>
-    </div>
-    <div style="display:grid;grid-template-columns:0.42fr 2fr 1.15fr 0.75fr;gap:12px;padding:11px 12px;border-top:1px solid #E4E7E8;align-items:start">
-      <div><span style="display:inline-block;width:22px;height:22px;border:1.5px solid #16A394;color:#16A394;font:700 10px/20px Barlow;text-align:center">4</span></div>
-      <div><div style="font:600 12.4px/1.3 Poppins;color:#101617;margin-bottom:3px">Xero sync <span style="font-weight:400;color:#7C8689">&#183; optional</span></div><div style="font:400 11.2px/1.45 Barlow;color:#7C8689">Invoices posted straight to Xero instead of exported as CSV.</div></div>
-      <div style="font:400 11.2px/1.45 Barlow;color:#33393B">On sign-off</div>
-      <div style="text-align:right"><span style="display:inline-block;min-width:70px;border-bottom:1.5px solid #16A394">&nbsp;</span></div>
-    </div>
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:9px"><span style="font:700 10px/1.3 Poppins;letter-spacing:0.16em;color:#16A394;white-space:nowrap">THE THREE OPTIONS</span><span style="font:500 9px/1.3 Barlow;letter-spacing:0.3em;color:#16A394;white-space:nowrap">C O M M E R C I A L</span></div><div style="height:1px;background:#101617;margin-bottom:16px"></div>
+  <h2 style="font:700 32px/1.05 Poppins;margin:0 0 8px;color:#101617">Buy it, build it, or trial it.</h2>
+  <p style="font:400 13.4px/1.6 Barlow;color:#4A5153;max-width:5.6in;margin:0 0 18px">Same system in all three. What changes is how much you commit before you know whether the crew will actually use it.</p>
+  <div style="border:1px solid #DDE1E2;margin-bottom:16px;break-inside:avoid">
+    <div style="display:grid;grid-template-columns:0.42fr 1.5fr 1.45fr 0.92fr;background:#101617;color:#F4F6F6;font:600 9px/1 Barlow;letter-spacing:0.14em;padding:9px 12px"><span></span><span>HOW YOU PAY</span><span>PICK THIS IF</span><span style="text-align:right">EX GST</span></div>
+    <div style="display:grid;grid-template-columns:0.42fr 1.5fr 1.45fr 0.92fr;padding:11px 12px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font:700 13px/1 Poppins;color:#16A394">A</strong><span><strong style="font-weight:600;color:#101617">Buy it once</strong><br>One payment on handover</span><span>You have seen enough and want it done and off your desk</span><span style="text-align:right;font:600 13px/1.2 Poppins;color:#101617">$14,500</span></div>
+    <div style="display:grid;grid-template-columns:0.42fr 1.5fr 1.45fr 0.92fr;padding:11px 12px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font:700 13px/1 Poppins;color:#16A394">B</strong><span><strong style="font-weight:600;color:#101617">Build it in stages</strong><br>Three payments, each on sign-off</span><span>You would rather not commit the lot up front, and want the option to stop</span><span style="text-align:right;font:600 13px/1.2 Poppins;color:#101617">$16,000<br><span style="font:400 9.5px/1.3 Barlow;color:#7C8689">across 3 stages</span></span></div>
+    <div style="display:grid;grid-template-columns:0.42fr 1.5fr 1.45fr 0.92fr;padding:11px 12px;border-top:1px solid #E4E7E8;background:#F4F7F7;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font:700 13px/1 Poppins;color:#16A394">C</strong><span><strong style="font-weight:600;color:#101617">Trial it first</strong><br>One payment now, 60 days</span><span>You want the crew to prove it on real jobs before you decide anything</span><span style="text-align:right;font:600 13px/1.2 Poppins;color:#101617">$1,500<br><span style="font:400 9.5px/1.3 Barlow;color:#7C8689">credited in full</span></span></div>
   </div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:16px">
     <div>
-      <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">OPTION C &#183; SERVER INCLUDED</div>
-      <p style="font:400 11.8px/1.5 Barlow;color:#33393B;margin:0">Hosting and database carried by me through every stage, plus twelve months after the last one you take. Accounts transfer to you at the end of that period.</p>
+      <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">C IS NOT A FOURTH PRODUCT</div>
+      <p style="font:400 11.8px/1.5 Barlow;color:#33393B;margin:0">It is the front door to A or B. The $1,500 comes straight off whichever one you pick at the end of the sixty days. Trial then buy outright is still $14,500 all up &#8212; not a cent more for having taken the time.</p>
     </div>
     <div>
-      <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">OPTION D &#183; SERVER EXCLUDED</div>
-      <p style="font:400 11.8px/1.5 Barlow;color:#33393B;margin:0">You open the accounts before Stage 1 handover and carry the monthly from there. I set them up as part of the handover.</p>
+      <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">WHY B COSTS MORE THAN A</div>
+      <p style="font:400 11.8px/1.5 Barlow;color:#33393B;margin:0">$1,500 more, and that is the honest reason: staging it means I carry the risk of you stopping halfway, and the work gets done in three visits instead of one. You are paying for the right to walk away.</p>
     </div>
   </div>
-  <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">HOW STAGES WORK</div>
-  <p style="font:400 12.2px/1.55 Barlow;color:#33393B;margin:0 0 16px">Each stage is quoted before it starts and invoiced when it is signed off. Stages 3 and 4 are genuinely optional &#8212; plenty of businesses run happily on Stage 2 and never take them.</p>
-  <div style="border-left:3px solid #16A394;padding:11px 15px;background:#F4F7F7;break-inside:avoid"><p style="font:400 12.6px/1.55 Barlow;color:#33393B;margin:0"><strong>Stage 1 is where you are now.</strong> The system is built and running. Everything after that is your call, made with real experience of using it rather than a guess up front.</p></div>
+  <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">THE SAME IN ALL THREE</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 22px;margin-bottom:16px">
+    <div>
+      <div style="display:flex;gap:8px;padding:4.5px 0;border-top:1px solid #E9ECEC;font:400 11.5px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1;min-width:0">The full system as listed on page&nbsp;2</span></div>
+      <div style="display:flex;gap:8px;padding:4.5px 0;border-top:1px solid #E9ECEC;font:400 11.5px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1;min-width:0">Both written guides, desktop and phone</span></div>
+      <div style="display:flex;gap:8px;padding:4.5px 0;border-top:1px solid #E9ECEC;font:400 11.5px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1;min-width:0">Handover session with you and the crew</span></div>
+    </div>
+    <div>
+      <div style="display:flex;gap:8px;padding:4.5px 0;border-top:1px solid #E9ECEC;font:400 11.5px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1;min-width:0">Sixty days of feedback worked back in</span></div>
+      <div style="display:flex;gap:8px;padding:4.5px 0;border-top:1px solid #E9ECEC;font:400 11.5px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1;min-width:0">Server and database paid by me for 12 months</span></div>
+      <div style="display:flex;gap:8px;padding:4.5px 0;border-top:1px solid #E9ECEC;font:400 11.5px/1.45 Barlow;color:#33393B"><span style="color:#16A394;font-weight:700">&#10003;</span><span style="flex:1;min-width:0">Your data exportable at any time</span></div>
+    </div>
+  </div>
+  <div style="border-left:3px solid #16A394;padding:11px 15px;background:#F4F7F7;break-inside:avoid"><p style="font:400 12.6px/1.55 Barlow;color:#33393B;margin:0"><strong>The running cost is not one of the options.</strong> It is about NZD&nbsp;$600 a year, at cost, and it is covered for the first twelve months in every one of these. If you would rather open the two accounts in Peak&#8217;s name from day one, take $600 off &#8212; it makes no difference to me which way round it goes. Page&nbsp;6 has the actual figures.</p></div>
+</section>
+
+<section data-screen-label="Buy or stage" style="break-after:page">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:9px"><span style="font:700 10px/1.3 Poppins;letter-spacing:0.16em;color:#16A394;white-space:nowrap">OPTION A &#183; BUY IT ONCE</span><span style="font:500 9px/1.3 Barlow;letter-spacing:0.3em;color:#16A394;white-space:nowrap">C O M M E R C I A L</span></div><div style="height:1px;background:#101617;margin-bottom:16px"></div>
+  <h2 style="font:700 32px/1.05 Poppins;margin:0 0 8px;color:#101617">One payment. Done.</h2>
+  <p style="font:400 13.4px/1.6 Barlow;color:#4A5153;max-width:5.6in;margin:0 0 16px">Everything below, invoiced once on handover. Nothing staged, nothing to review, nothing else to arrange.</p>
+  <div style="border:1px solid #DDE1E2;margin-bottom:22px;break-inside:avoid">
+    <div style="display:grid;grid-template-columns:1.9fr 0.85fr;background:#101617;color:#F4F6F6;font:600 9px/1 Barlow;letter-spacing:0.14em;padding:9px 13px"><span>WHAT IS INCLUDED</span><span style="text-align:right">EX GST</span></div>
+    <div style="display:grid;grid-template-columns:1.9fr 0.85fr;padding:9px 13px;border-top:1px solid #E4E7E8;font:400 11.6px/1.45 Barlow;color:#33393B"><span>Live system &#8212; HQ desktop and field app, on your data</span><span style="text-align:right;color:#7C8689">included</span></div>
+    <div style="display:grid;grid-template-columns:1.9fr 0.85fr;padding:9px 13px;border-top:1px solid #E4E7E8;font:400 11.6px/1.45 Barlow;color:#33393B"><span>Both guides and a handover session</span><span style="text-align:right;color:#7C8689">included</span></div>
+    <div style="display:grid;grid-template-columns:1.9fr 0.85fr;padding:9px 13px;border-top:1px solid #E4E7E8;font:400 11.6px/1.45 Barlow;color:#33393B"><span>Sixty days of your feedback built back in</span><span style="text-align:right;color:#7C8689">included</span></div>
+    <div style="display:grid;grid-template-columns:1.9fr 0.85fr;padding:9px 13px;border-top:1px solid #E4E7E8;font:400 11.6px/1.45 Barlow;color:#33393B"><span>Named logins, passwords and database hardening</span><span style="text-align:right;color:#7C8689">included</span></div>
+    <div style="display:grid;grid-template-columns:1.9fr 0.85fr;padding:9px 13px;border-top:1px solid #E4E7E8;font:400 11.6px/1.45 Barlow;color:#33393B"><span>Server and database, first twelve months</span><span style="text-align:right;color:#7C8689">included</span></div>
+    <div style="display:grid;grid-template-columns:1.9fr 0.85fr;padding:11px 13px;border-top:1.5px solid #101617;background:#F4F7F7"><span style="font:600 12.5px/1.3 Poppins;color:#101617">Total, one payment on handover</span><span style="text-align:right;font:700 19px/1 Poppins;color:#101617">$14,500</span></div>
+    <div style="display:grid;grid-template-columns:1.9fr 0.85fr;padding:8px 13px;border-top:1px solid #E4E7E8;font:400 11.2px/1.45 Barlow;color:#7C8689"><span>Xero sync &#8212; invoices posted straight across, instead of CSV</span><span style="text-align:right;font:600 12px/1.3 Barlow;color:#33393B">+ $3,000</span></div>
+    <div style="display:grid;grid-template-columns:1.9fr 0.85fr;padding:8px 13px;border-top:1px solid #E4E7E8;font:400 11.2px/1.45 Barlow;color:#7C8689"><span>If you open the server accounts in Peak&#8217;s name from day one</span><span style="text-align:right;font:600 12px/1.3 Barlow;color:#33393B">&#8722; $600</span></div>
+  </div>
+
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:9px"><span style="font:700 10px/1.3 Poppins;letter-spacing:0.16em;color:#16A394;white-space:nowrap">OPTION B &#183; BUILD IT IN STAGES</span><span style="font:500 9px/1.3 Barlow;letter-spacing:0.3em;color:#16A394;white-space:nowrap">C O M M E R C I A L</span></div><div style="height:1px;background:#101617;margin-bottom:16px"></div>
+  <h2 style="font:700 32px/1.05 Poppins;margin:0 0 8px;color:#101617">Three payments. Stop whenever.</h2>
+  <p style="font:400 13.4px/1.6 Barlow;color:#4A5153;max-width:5.6in;margin:0 0 16px">Each stage is signed off and invoiced before the next one starts. If it stops being worth it, you stop &#8212; and you keep everything you have paid for.</p>
+  <div style="border:1px solid #DDE1E2;break-inside:avoid">
+    <div style="display:grid;grid-template-columns:0.4fr 1.65fr 0.95fr 0.72fr;background:#101617;color:#F4F6F6;font:600 9px/1 Barlow;letter-spacing:0.14em;padding:9px 13px"><span></span><span>STAGE</span><span>INVOICED</span><span style="text-align:right">EX GST</span></div>
+    <div style="display:grid;grid-template-columns:0.4fr 1.65fr 0.95fr 0.72fr;padding:10px 13px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><span style="font:600 11px/1.4 Barlow;color:#16A394">1</span><span><strong style="font-weight:600;color:#101617">Live system</strong><br><span style="color:#7C8689">The system as it stands, on your data, both guides, handover</span></span><span>On handover</span><span style="text-align:right;font:600 13px/1.3 Poppins;color:#101617">$6,000</span></div>
+    <div style="display:grid;grid-template-columns:0.4fr 1.65fr 0.95fr 0.72fr;padding:10px 13px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><span style="font:600 11px/1.4 Barlow;color:#16A394">2</span><span><strong style="font-weight:600;color:#101617">Your feedback built in</strong><br><span style="color:#7C8689">Everything you and the crew flag over sixty days, worked back into the system</span></span><span>End of trial</span><span style="text-align:right;font:600 13px/1.3 Poppins;color:#101617">$4,500</span></div>
+    <div style="display:grid;grid-template-columns:0.4fr 1.65fr 0.95fr 0.72fr;padding:10px 13px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><span style="font:600 11px/1.4 Barlow;color:#16A394">3</span><span><strong style="font-weight:600;color:#101617">Hardening</strong><br><span style="color:#7C8689">Named logins with passwords, permissions enforced at the database, audit of who changed what</span></span><span>On sign-off</span><span style="text-align:right;font:600 13px/1.3 Poppins;color:#101617">$5,500</span></div>
+    <div style="display:grid;grid-template-columns:0.4fr 1.65fr 0.95fr 0.72fr;padding:11px 13px;border-top:1.5px solid #101617;background:#F4F7F7"><span></span><span style="font:600 12.5px/1.3 Poppins;color:#101617">Total, all three stages</span><span></span><span style="text-align:right;font:700 19px/1 Poppins;color:#101617">$16,000</span></div>
+    <div style="display:grid;grid-template-columns:0.4fr 1.65fr 0.95fr 0.72fr;padding:8px 13px;border-top:1px solid #E4E7E8;font:400 11.2px/1.45 Barlow;color:#7C8689"><span></span><span>Xero sync &#8212; optional, whenever you want it</span><span></span><span style="text-align:right;font:600 12px/1.3 Barlow;color:#33393B">+ $3,000</span></div>
+  </div>
+  <p style="font:400 12.2px/1.55 Barlow;color:#33393B;margin:12px 0 0"><strong>Stop after Stage&nbsp;2</strong> and you have a working, tuned system for <strong>$10,500</strong>. Plenty of businesses would run happily on that and never take Stage&nbsp;3. It is there for when Peak grows past trusting everyone with everything.</p>
+</section>
+
+<section data-screen-label="Trial" style="break-after:page">
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:9px"><span style="font:700 10px/1.3 Poppins;letter-spacing:0.16em;color:#16A394;white-space:nowrap">OPTION C &#183; TRIAL IT FIRST</span><span style="font:500 9px/1.3 Barlow;letter-spacing:0.3em;color:#16A394;white-space:nowrap">C O M M E R C I A L</span></div><div style="height:1px;background:#101617;margin-bottom:16px"></div>
+  <h2 style="font:700 32px/1.05 Poppins;margin:0 0 8px;color:#101617">Sixty days. $1,500. Off the price if you buy.</h2>
+  <p style="font:400 13.4px/1.6 Barlow;color:#4A5153;max-width:5.6in;margin:0 0 18px">The whole system, live, on Peak&#8217;s real jobs and real hours, for two months. At the end you decide. Whatever you decide, the $1,500 was not wasted.</p>
+  <div style="border:1px solid #DDE1E2;margin-bottom:18px;break-inside:avoid">
+    <div style="display:grid;grid-template-columns:0.4fr 2.3fr 0.85fr;background:#101617;color:#F4F6F6;font:600 9px/1 Barlow;letter-spacing:0.14em;padding:9px 13px"><span></span><span>HOW IT RUNS</span><span style="text-align:right">EX GST</span></div>
+    <div style="display:grid;grid-template-columns:0.4fr 2.3fr 0.85fr;padding:10px 13px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><span style="font:600 11px/1.4 Barlow;color:#16A394">1</span><span><strong style="font-weight:600;color:#101617">Handover</strong> &#8212; system live on your data, crew signed on, both guides, one session with you and the team</span><span style="text-align:right;font:600 13px/1.3 Poppins;color:#101617">$1,500</span></div>
+    <div style="display:grid;grid-template-columns:0.4fr 2.3fr 0.85fr;padding:10px 13px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><span style="font:600 11px/1.4 Barlow;color:#16A394">2</span><span><strong style="font-weight:600;color:#101617">Days 1&#8211;60</strong> &#8212; you run it on live jobs. Server on me. Anything broken gets fixed inside the trial, no charge</span><span style="text-align:right;color:#7C8689">nil</span></div>
+    <div style="display:grid;grid-template-columns:0.4fr 2.3fr 0.85fr;padding:10px 13px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><span style="font:600 11px/1.4 Barlow;color:#16A394">3</span><span><strong style="font-weight:600;color:#101617">Day 60</strong> &#8212; we sit down with what the crew actually did with it, and you pick A, B, or neither</span><span style="text-align:right;color:#7C8689">nil</span></div>
+  </div>
+  <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">WHAT DAY 60 COSTS YOU, EACH WAY</div>
+  <div style="border:1px solid #DDE1E2;margin-bottom:18px;break-inside:avoid">
+    <div style="display:grid;grid-template-columns:1.35fr 1.5fr 0.8fr;background:#101617;color:#F4F6F6;font:600 9px/1 Barlow;letter-spacing:0.14em;padding:9px 13px"><span>YOU DECIDE</span><span>WHAT HAPPENS</span><span style="text-align:right">STILL TO PAY</span></div>
+    <div style="display:grid;grid-template-columns:1.35fr 1.5fr 0.8fr;padding:10px 13px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font-weight:600;color:#101617">Buy it outright (A)</strong><span>$1,500 comes off the $14,500</span><span style="text-align:right;font:600 13px/1.3 Poppins;color:#101617">$13,000</span></div>
+    <div style="display:grid;grid-template-columns:1.35fr 1.5fr 0.8fr;padding:10px 13px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font-weight:600;color:#101617">Go to stages (B)</strong><span>$1,500 comes off Stage&nbsp;1, then Stages 2 and 3 as you sign them off</span><span style="text-align:right;font:600 13px/1.3 Poppins;color:#101617">$4,500<br><span style="font:400 9.5px/1.3 Barlow;color:#7C8689">to finish Stage 1</span></span></div>
+    <div style="display:grid;grid-template-columns:1.35fr 1.5fr 0.8fr;padding:10px 13px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font-weight:600;color:#101617">Walk away</strong><span>Full export of everything the crew entered. No exit fee, no argument</span><span style="text-align:right;font:600 13px/1.3 Poppins;color:#101617">nil</span></div>
+  </div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:16px">
+    <div>
+      <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">WHY IT IS NOT FREE</div>
+      <p style="font:400 11.8px/1.5 Barlow;color:#33393B;margin:0">A free trial gets installed and forgotten. A paid one gets used, and it is the crew using it that tells us both whether this is worth building out. The $1,500 buys the handover and the sixty days of fixes &#8212; and you get every cent of it back against the price.</p>
+    </div>
+    <div>
+      <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">WHAT I NEED IN RETURN</div>
+      <p style="font:400 11.8px/1.5 Barlow;color:#33393B;margin:0">Real jobs on it, not a test one. The crew clocking on properly. And you telling me plainly what is annoying, because that is what Stage&nbsp;2 is built from.</p>
+    </div>
+  </div>
+  <div style="border-left:3px solid #16A394;padding:11px 15px;background:#F4F7F7;break-inside:avoid"><p style="font:400 12.6px/1.55 Barlow;color:#33393B;margin:0"><strong>This is the one I would take.</strong> Two months of your crew actually using it will tell you more than any amount of me talking about it, and it costs you nothing in the end if you go on to buy.</p></div>
 </section>
 
 <section data-screen-label="Server" style="break-after:page">
   <div style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:9px"><span style="font:700 10px/1.3 Poppins;letter-spacing:0.16em;color:#16A394;white-space:nowrap">THE RUNNING COST</span><span style="font:500 9px/1.3 Barlow;letter-spacing:0.3em;color:#16A394;white-space:nowrap">C O M M E R C I A L</span></div><div style="height:1px;background:#101617;margin-bottom:16px"></div>
   <h2 style="font:700 32px/1.05 Poppins;margin:0 0 8px;color:#101617">What the server actually costs.</h2>
-  <p style="font:400 13.4px/1.6 Barlow;color:#4A5153;max-width:5.6in;margin:0 0 18px">No mystery here &#8212; these are the published prices, passed on at cost. There is no margin on them in any option.</p>
+  <p style="font:400 13.4px/1.6 Barlow;color:#4A5153;max-width:5.6in;margin:0 0 18px">Published prices, passed on at cost, no margin. Covered by me for the first twelve months in every option &#8212; this page is so you know what you are picking up after that.</p>
   <div style="border:1px solid #DDE1E2;margin-bottom:16px;break-inside:avoid">
-    <div style="display:grid;grid-template-columns:1.5fr 1fr 1.15fr 1.5fr;background:#101617;color:#F4F6F6;font:600 9px/1 Barlow;letter-spacing:0.14em;padding:9px 12px"><span>WHAT</span><span>PLAN</span><span>COST</span><span>WHY IT IS NEEDED</span></div>
-    <div style="display:grid;grid-template-columns:1.5fr 1fr 1.15fr 1.5fr;padding:10px 12px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font-weight:600">Database &#8212; Supabase</strong><span>Pro</span><span>USD $25 / month</span><span>Holds every job, quote, hour and photo</span></div>
-    <div style="display:grid;grid-template-columns:1.5fr 1fr 1.15fr 1.5fr;padding:10px 12px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font-weight:600">Hosting &#8212; GitHub</strong><span>Pro</span><span>USD $4 / month</span><span>Serves the app and keeps the code private</span></div>
-    <div style="display:grid;grid-template-columns:1.5fr 1fr 1.15fr 1.5fr;padding:10px 12px;border-top:1.5px solid #101617;font:600 12px/1.45 Barlow;color:#101617"><strong>Total</strong><span></span><span>USD $29 / month</span><span style="font-weight:400;color:#7C8689">Roughly NZD $50 &#8212; check the rate on the day</span></div>
+    <div style="display:grid;grid-template-columns:1.5fr 0.75fr 1.05fr 1.6fr;background:#101617;color:#F4F6F6;font:600 9px/1 Barlow;letter-spacing:0.14em;padding:9px 12px"><span>WHAT</span><span>PLAN</span><span>COST</span><span>WHY IT IS NEEDED</span></div>
+    <div style="display:grid;grid-template-columns:1.5fr 0.75fr 1.05fr 1.6fr;padding:10px 12px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font-weight:600">Database &#8212; Supabase</strong><span>Pro</span><span>USD $25 / mo</span><span>Holds every job, quote, hour and photo</span></div>
+    <div style="display:grid;grid-template-columns:1.5fr 0.75fr 1.05fr 1.6fr;padding:10px 12px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font-weight:600">Hosting &#8212; GitHub</strong><span>Pro</span><span>USD $4 / mo</span><span>Serves the app and keeps the code private</span></div>
+    <div style="display:grid;grid-template-columns:1.5fr 0.75fr 1.05fr 1.6fr;padding:11px 12px;border-top:1.5px solid #101617;background:#F4F7F7;font:600 12px/1.45 Barlow;color:#101617"><strong>Total</strong><span></span><span style="font:700 14px/1.2 Poppins">USD $29 / mo</span><span style="font-weight:400;color:#7C8689">About NZD $50 a month &#8212; roughly <strong style="color:#101617">NZD $600 a year</strong></span></div>
+  </div>
+  <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">WHO PAYS IT, AND WHEN</div>
+  <div style="border:1px solid #DDE1E2;margin-bottom:16px;break-inside:avoid">
+    <div style="display:grid;grid-template-columns:1.1fr 1.9fr 0.75fr;background:#101617;color:#F4F6F6;font:600 9px/1 Barlow;letter-spacing:0.14em;padding:9px 12px"><span>PERIOD</span><span>WHO CARRIES IT</span><span style="text-align:right">COST TO PEAK</span></div>
+    <div style="display:grid;grid-template-columns:1.1fr 1.9fr 0.75fr;padding:10px 12px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font-weight:600;color:#101617">Trial, 60 days</strong><span>Me, on my accounts</span><span style="text-align:right;font:600 12.5px/1.3 Poppins;color:#101617">nil</span></div>
+    <div style="display:grid;grid-template-columns:1.1fr 1.9fr 0.75fr;padding:10px 12px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font-weight:600;color:#101617">First 12 months</strong><span>Me, on my accounts &#8212; included in the price of A and B</span><span style="text-align:right;font:600 12.5px/1.3 Poppins;color:#101617">nil</span></div>
+    <div style="display:grid;grid-template-columns:1.1fr 1.9fr 0.75fr;padding:10px 12px;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font-weight:600;color:#101617">Year 2 onward</strong><span>You. Accounts transfer to Peak, billed direct, I take nothing</span><span style="text-align:right;font:600 12.5px/1.3 Poppins;color:#101617">~$600 / yr</span></div>
+    <div style="display:grid;grid-template-columns:1.1fr 1.9fr 0.75fr;padding:10px 12px;border-top:1px solid #E4E7E8;background:#F4F7F7;font:400 11.4px/1.45 Barlow;color:#33393B"><strong style="font-weight:600;color:#101617">Or, from day one</strong><span>You open both accounts yourself. I set them up at handover</span><span style="text-align:right;font:600 12.5px/1.3 Poppins;color:#16A394">&#8722; $600<br><span style="font:400 9.5px/1.3 Barlow;color:#7C8689">off A or B</span></span></div>
   </div>
   <div style="display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-bottom:16px">
     <div>
       <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">COULD IT RUN FOR NOTHING?</div>
-      <p style="font:400 11.8px/1.5 Barlow;color:#33393B;margin:0 0 8px">Technically yes. The free tiers cover 500&nbsp;MB of data and 5&nbsp;GB of traffic a month, which Peak would not get near for a long time.</p>
+      <p style="font:400 11.8px/1.5 Barlow;color:#33393B;margin:0 0 7px">Technically yes. The free tiers cover 500&nbsp;MB of data and 5&nbsp;GB of traffic a month, which Peak would not get near for a long time.</p>
       <p style="font:400 11.8px/1.5 Barlow;color:#33393B;margin:0">The catch: a free database <strong>pauses after seven days without use</strong>. Nothing is lost and it restarts from the dashboard, but a quiet week over Christmas means the crew arrive Monday to an app that will not load.</p>
     </div>
     <div>
       <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">WHY PAID IS THE RIGHT CALL</div>
-      <p style="font:400 11.8px/1.5 Barlow;color:#33393B;margin:0 0 8px">Twenty-nine US dollars a month is less than one hour of a painter&#8217;s charge-out. For that the system is always up, the code stays private, and nobody has to think about it.</p>
+      <p style="font:400 11.8px/1.5 Barlow;color:#33393B;margin:0 0 7px">Twenty-nine US dollars a month is less than one hour of a painter&#8217;s charge-out. For that the system is always up, the code stays private, and nobody has to think about it.</p>
       <p style="font:400 11.8px/1.5 Barlow;color:#7C8689;margin:0">Costs rise only if the business grows a long way past where it is now &#8212; and by then the system will have paid for itself many times over.</p>
     </div>
   </div>
-  <div style="border-left:3px solid #16A394;padding:11px 15px;background:#F4F7F7;break-inside:avoid"><p style="font:400 12.6px/1.55 Barlow;color:#33393B;margin:0"><strong>In plain terms:</strong> about NZD $600 a year to run, at cost, whoever pays it. That is the entire ongoing expense of the system.</p></div>
+  <div style="border-left:3px solid #16A394;padding:11px 15px;background:#F4F7F7;break-inside:avoid"><p style="font:400 12.6px/1.55 Barlow;color:#33393B;margin:0"><strong>In plain terms:</strong> about NZD&nbsp;$600 a year, at cost, whoever pays it. That is the entire ongoing expense of running this system &#8212; there is no licence fee, no per-seat charge and no annual renewal.</p></div>
 </section>
 
 <section data-screen-label="Terms">
-  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:9px"><span style="font:700 10px/1.3 Poppins;letter-spacing:0.16em;color:#16A394;white-space:nowrap">TERMS &amp; NEXT STEP</span><span style="font:500 9px/1.3 Barlow;letter-spacing:0.3em;color:#16A394;white-space:nowrap">C O M M E R C I A L</span></div><div style="height:1px;background:#101617;margin-bottom:16px"></div>
-  <h2 style="font:700 32px/1.05 Poppins;margin:0 0 8px;color:#101617">The fine print, kept short.</h2>
-  <p style="font:400 13.4px/1.6 Barlow;color:#4A5153;max-width:5.6in;margin:0 0 18px">Nothing unusual here. It is written down so neither of us is guessing later.</p>
-  <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">WHAT APPLIES TO EVERY OPTION</div>
-  <div style="margin-bottom:16px">
-    <div style="display:flex;gap:14px;padding:8px 0;border-top:1px solid #E4E7E8;font:400 11.8px/1.5 Barlow;color:#33393B"><span style="flex:0 0 1.55in;font-weight:600;color:#101617">Ownership</span><span style="flex:1">The system and all data in it are yours on final payment. No licence, no lock-in, no per-seat fee.</span></div>
-    <div style="display:flex;gap:14px;padding:8px 0;border-top:1px solid #E4E7E8;font:400 11.8px/1.5 Barlow;color:#33393B"><span style="flex:0 0 1.55in;font-weight:600;color:#101617">Your data</span><span style="flex:1">Yours at all times. It can be exported to CSV whenever you want, in any option.</span></div>
-    <div style="display:flex;gap:14px;padding:8px 0;border-top:1px solid #E4E7E8;font:400 11.8px/1.5 Barlow;color:#33393B"><span style="flex:0 0 1.55in;font-weight:600;color:#101617">Trial period</span><span style="flex:1">Sixty days from handover. Anything you or the crew flag in that window is worked back in as part of the price.</span></div>
-    <div style="display:flex;gap:14px;padding:8px 0;border-top:1px solid #E4E7E8;font:400 11.8px/1.5 Barlow;color:#33393B"><span style="flex:0 0 1.55in;font-weight:600;color:#101617">Support</span><span style="flex:1">Included through the trial. After that, either an agreed hourly rate or a support arrangement &#8212; your choice.</span></div>
-    <div style="display:flex;gap:14px;padding:8px 0;border-top:1px solid #E4E7E8;font:400 11.8px/1.5 Barlow;color:#33393B"><span style="flex:0 0 1.55in;font-weight:600;color:#101617">Changes</span><span style="flex:1">New work beyond the scope on page&nbsp;2 is quoted before it starts. Nothing gets added to an invoice unannounced.</span></div>
-    <div style="display:flex;gap:14px;padding:8px 0;border-top:1px solid #E4E7E8;font:400 11.8px/1.5 Barlow;color:#33393B"><span style="flex:0 0 1.55in;font-weight:600;color:#101617">Running costs</span><span style="flex:1">Passed on at cost, with no margin, in every option.</span></div>
-    <div style="display:flex;gap:14px;padding:8px 0;border-top:1px solid #E4E7E8;font:400 11.8px/1.5 Barlow;color:#33393B"><span style="flex:0 0 1.55in;font-weight:600;color:#101617">If you walk away</span><span style="flex:1">You keep everything paid for and a full export of your data. No exit fee.</span></div>
-    <div style="display:flex;gap:14px;padding:8px 0;border-top:1px solid #E4E7E8;font:400 11.8px/1.5 Barlow;color:#33393B"><span style="flex:0 0 1.55in;font-weight:600;color:#101617">Prices</span><span style="flex:1">Exclude GST. Valid 30 days from the date on this document.</span></div>
+  <div style="display:flex;justify-content:space-between;align-items:baseline;gap:14px;margin-bottom:9px"><span style="font:700 10px/1.3 Poppins;letter-spacing:0.16em;color:#16A394;white-space:nowrap">SUMMARY, TERMS &amp; NEXT STEP</span><span style="font:500 9px/1.3 Barlow;letter-spacing:0.3em;color:#16A394;white-space:nowrap">C O M M E R C I A L</span></div><div style="height:1px;background:#101617;margin-bottom:16px"></div>
+  <h2 style="font:700 32px/1.05 Poppins;margin:0 0 8px;color:#101617">Every number on one page.</h2>
+  <p style="font:400 13.4px/1.6 Barlow;color:#4A5153;max-width:5.6in;margin:0 0 16px">All figures exclude GST. Nothing here is unusual &#8212; it is written down so neither of us is guessing later.</p>
+  <div style="border:1px solid #DDE1E2;margin-bottom:18px;break-inside:avoid">
+    <div style="display:grid;grid-template-columns:1.35fr 1.75fr 0.7fr;background:#101617;color:#F4F6F6;font:600 9px/1 Barlow;letter-spacing:0.14em;padding:9px 13px"><span>ITEM</span><span>WHEN IT IS INVOICED</span><span style="text-align:right">EX GST</span></div>
+    <div style="display:grid;grid-template-columns:1.35fr 1.75fr 0.7fr;padding:9px 13px;border-top:1px solid #E4E7E8;font:400 11.5px/1.45 Barlow;color:#33393B"><strong style="font-weight:600;color:#101617">A &#183; Buy it once</strong><span>One payment on handover</span><span style="text-align:right;font:600 12.5px/1.3 Poppins;color:#101617">$14,500</span></div>
+    <div style="display:grid;grid-template-columns:1.35fr 1.75fr 0.7fr;padding:9px 13px;border-top:1px solid #E4E7E8;font:400 11.5px/1.45 Barlow;color:#33393B"><strong style="font-weight:600;color:#101617">B &#183; Stages, all three</strong><span>$6,000 handover &#183; $4,500 end of trial &#183; $5,500 sign-off</span><span style="text-align:right;font:600 12.5px/1.3 Poppins;color:#101617">$16,000</span></div>
+    <div style="display:grid;grid-template-columns:1.35fr 1.75fr 0.7fr;padding:9px 13px;border-top:1px solid #E4E7E8;font:400 11.5px/1.45 Barlow;color:#7C8689"><span style="padding-left:11px">B, stopping after Stage&nbsp;2</span><span>$6,000 handover &#183; $4,500 end of trial</span><span style="text-align:right;font:600 12.5px/1.3 Poppins;color:#33393B">$10,500</span></div>
+    <div style="display:grid;grid-template-columns:1.35fr 1.75fr 0.7fr;padding:9px 13px;border-top:1px solid #E4E7E8;background:#F4F7F7;font:400 11.5px/1.45 Barlow;color:#33393B"><strong style="font-weight:600;color:#101617">C &#183; Trial first</strong><span>One payment now &#183; credited in full against A or B</span><span style="text-align:right;font:600 12.5px/1.3 Poppins;color:#101617">$1,500</span></div>
+    <div style="display:grid;grid-template-columns:1.35fr 1.75fr 0.7fr;padding:9px 13px;border-top:1px solid #E4E7E8;font:400 11.5px/1.45 Barlow;color:#7C8689"><span>Xero sync &#8212; optional add-on to A or B</span><span>On sign-off, whenever you want it</span><span style="text-align:right;font:600 12.5px/1.3 Poppins;color:#33393B">+ $3,000</span></div>
+    <div style="display:grid;grid-template-columns:1.35fr 1.75fr 0.7fr;padding:9px 13px;border-top:1px solid #E4E7E8;font:400 11.5px/1.45 Barlow;color:#7C8689"><span>You open the server accounts yourself</span><span>Deducted at handover</span><span style="text-align:right;font:600 12.5px/1.3 Poppins;color:#16A394">&#8722; $600</span></div>
+    <div style="display:grid;grid-template-columns:1.35fr 1.75fr 0.7fr;padding:9px 13px;border-top:1px solid #E4E7E8;font:400 11.5px/1.45 Barlow;color:#7C8689"><span>Running cost, year 2 onward</span><span>Billed to Peak direct, at cost, no margin to me</span><span style="text-align:right;font:600 12.5px/1.3 Poppins;color:#33393B">~$600 / yr</span></div>
   </div>
-  <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">WHAT I NEED FROM YOU</div>
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 26px;margin-bottom:18px">
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 24px;margin-bottom:16px">
     <div>
-      <div style="display:flex;gap:9px;padding:7px 0;border-top:1px solid #E4E7E8;font:400 12.4px/1.45 Barlow;color:#33393B"><span style="flex:0 0 17px;height:17px;border:1px solid #16A394;color:#16A394;font:600 10px/15px Barlow;text-align:center">1</span><span style="flex:1">Run the trial. Real jobs, real crew, real hours.</span></div>
-      <div style="display:flex;gap:9px;padding:7px 0;border-top:1px solid #E4E7E8;font:400 12.4px/1.45 Barlow;color:#33393B"><span style="flex:0 0 17px;height:17px;border:1px solid #16A394;color:#16A394;font:600 10px/15px Barlow;text-align:center">2</span><span style="flex:1">Mark up the two guides where it does not match how Peak works.</span></div>
+      <div style="display:flex;gap:12px;padding:6.5px 0;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><span style="flex:0 0 0.82in;font-weight:600;color:#101617">Ownership</span><span style="flex:1;min-width:0">Yours on final payment. No licence, no lock-in, no per-seat fee.</span></div>
+      <div style="display:flex;gap:12px;padding:6.5px 0;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><span style="flex:0 0 0.82in;font-weight:600;color:#101617">Your data</span><span style="flex:1;min-width:0">Yours at all times, exportable to CSV whenever you want.</span></div>
+      <div style="display:flex;gap:12px;padding:6.5px 0;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><span style="flex:0 0 0.82in;font-weight:600;color:#101617">Trial period</span><span style="flex:1;min-width:0">Sixty days from handover, in every option. What you flag gets worked in.</span></div>
+      <div style="display:flex;gap:12px;padding:6.5px 0;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><span style="flex:0 0 0.82in;font-weight:600;color:#101617">Support</span><span style="flex:1;min-width:0">Included through the trial. After that, agreed hourly or a support arrangement.</span></div>
     </div>
     <div>
-      <div style="display:flex;gap:9px;padding:7px 0;border-top:1px solid #E4E7E8;font:400 12.4px/1.45 Barlow;color:#33393B"><span style="flex:0 0 17px;height:17px;border:1px solid #16A394;color:#16A394;font:600 10px/15px Barlow;text-align:center">3</span><span style="flex:1">Tell me which of the four options suits how you buy things.</span></div>
-      <div style="display:flex;gap:9px;padding:7px 0;border-top:1px solid #E4E7E8;font:400 12.4px/1.45 Barlow;color:#33393B"><span style="flex:0 0 17px;height:17px;border:1px solid #16A394;color:#16A394;font:600 10px/15px Barlow;text-align:center">4</span><span style="flex:1">We agree the stages, and I invoice against them.</span></div>
+      <div style="display:flex;gap:12px;padding:6.5px 0;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><span style="flex:0 0 0.82in;font-weight:600;color:#101617">Changes</span><span style="flex:1;min-width:0">Anything beyond the scope on page&nbsp;2 is quoted before it starts.</span></div>
+      <div style="display:flex;gap:12px;padding:6.5px 0;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><span style="flex:0 0 0.82in;font-weight:600;color:#101617">Stages</span><span style="flex:1;min-width:0">Each one signed off before the next starts. You can stop after any of them.</span></div>
+      <div style="display:flex;gap:12px;padding:6.5px 0;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><span style="flex:0 0 0.82in;font-weight:600;color:#101617">If you walk away</span><span style="flex:1;min-width:0">You keep everything paid for and a full export. No exit fee.</span></div>
+      <div style="display:flex;gap:12px;padding:6.5px 0;border-top:1px solid #E4E7E8;font:400 11.4px/1.45 Barlow;color:#33393B"><span style="flex:0 0 0.82in;font-weight:600;color:#101617">Validity</span><span style="flex:1;min-width:0">Prices exclude GST and hold for 30 days from the date on this document.</span></div>
     </div>
   </div>
-  <div style="border-left:3px solid #16A394;padding:11px 15px;background:#F4F7F7;break-inside:avoid"><p style="font:400 12.6px/1.55 Barlow;color:#33393B;margin:0"><strong>My honest view:</strong> run Stage&nbsp;1 for a month before you commit to anything past it. If the crew do not pick it up, everything after Stage&nbsp;2 is money you should not spend &#8212; and I would rather tell you that now than find out later.</p></div>
+  <div style="font:600 9.5px/1 Poppins;letter-spacing:0.16em;color:#16A394;margin-bottom:8px">NEXT STEP</div>
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:0 26px;margin-bottom:16px">
+    <div>
+      <div style="display:flex;gap:9px;padding:6.5px 0;border-top:1px solid #E4E7E8;font:400 12px/1.45 Barlow;color:#33393B"><span style="flex:0 0 17px;height:17px;border:1px solid #16A394;color:#16A394;font:600 10px/15px Barlow;text-align:center">1</span><span style="flex:1;min-width:0">Tell me A, B or C. One line is enough.</span></div>
+      <div style="display:flex;gap:9px;padding:6.5px 0;border-top:1px solid #E4E7E8;font:400 12px/1.45 Barlow;color:#33393B"><span style="flex:0 0 17px;height:17px;border:1px solid #16A394;color:#16A394;font:600 10px/15px Barlow;text-align:center">2</span><span style="flex:1;min-width:0">I set your PINs and put the live jobs in. Half a day.</span></div>
+    </div>
+    <div>
+      <div style="display:flex;gap:9px;padding:6.5px 0;border-top:1px solid #E4E7E8;font:400 12px/1.45 Barlow;color:#33393B"><span style="flex:0 0 17px;height:17px;border:1px solid #16A394;color:#16A394;font:600 10px/15px Barlow;text-align:center">3</span><span style="flex:1;min-width:0">Handover session with you and the crew, and it goes live.</span></div>
+      <div style="display:flex;gap:9px;padding:6.5px 0;border-top:1px solid #E4E7E8;font:400 12px/1.45 Barlow;color:#33393B"><span style="flex:0 0 17px;height:17px;border:1px solid #16A394;color:#16A394;font:600 10px/15px Barlow;text-align:center">4</span><span style="flex:1;min-width:0">Mark up the guides where it does not match how Peak works.</span></div>
+    </div>
+  </div>
+  <div style="border-left:3px solid #16A394;padding:11px 15px;background:#F4F7F7;break-inside:avoid"><p style="font:400 12.6px/1.55 Barlow;color:#33393B;margin:0"><strong>My honest view:</strong> take C. Sixty days of your crew on it costs you $1,500, tells you more than any demo, and comes straight off the price if you go ahead. If they do not pick it up in two months, that is worth knowing before you spend fourteen thousand dollars &#8212; and I would rather tell you that now than find out later.</p></div>
 </section>
+
 </x-import>
 </x-dc>
 </body>
