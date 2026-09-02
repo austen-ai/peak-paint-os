@@ -17,7 +17,7 @@ Open it on your laptop for the office side, and on your phone for the field app.
 
 - **Guide 1 — Desktop.** Quotes, tendering, rates, schedule, H&S, variations, timesheets, invoicing and reports. 12 pages, one screen per page.
 - **Guide 2 — Mobile.** What a painter actually taps on a normal day, in order. 9 pages.
-- **Commercial proposal.** Scope, three ways to buy it, what each stage delivers, and terms. 6 pages.
+- **Pricing models.** Scope, three ways to buy it, what each stage delivers, and terms. 6 pages.
 
 Each guide page ends with one question I want your answer to. Write on them — that feedback is what shapes the next version.
 
